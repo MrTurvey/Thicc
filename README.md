@@ -18,9 +18,13 @@ Instead, why not use this tool to generate the Burp Suite settings you need to e
 
 ## How does it look? 
 
-Not great, but it does the job.
+Not great, but it does the job. Here's the tool making some RegEx and setting the proxy:
 
 <img src="https://github.com/MrTurvey/Thicc/blob/main/Screenshot.png">
+
+Here's the tool searching for processes that match a string:
+
+<img src="https://github.com/MrTurvey/Thicc/blob/main/Screenshot2.png">
 
 - - -
 
@@ -48,4 +52,14 @@ python thicc.py -Pe 127.0.0.1:8080
 Disable the system proxy
 ```
 python thicc.py -Pd
+```
+List all processes
+```
+python thicc.py -L
+```
+Search for Process using similar strings
+```
+python thicc.py -S <String to match>
+python thicc.py -S Spot
+python thicc.py -S Spotify
 ```
